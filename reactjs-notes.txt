@@ -1,0 +1,9 @@
+What is react - 
+    React is js library which is used building userInterface components .
+
+How does React work - 
+    React creates a virtual DOM in memory and does all manipulation there before the final changes in the browser dom
+
+React need a buiding tool which is vite
+    install this using - npm create vite@latest 
+    to run npm command you should be able to see package.json file in directory
