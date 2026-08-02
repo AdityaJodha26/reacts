@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-      <h1 className='text-3xl bg-green-500'> Vite with Tailwind</h1>  
+      <h1 className='text-3xl bg-green-500 p-3 rounded-md flex items-center justify-center w-full '> Vite with Tailwind</h1>  
     </>
   )
 }
