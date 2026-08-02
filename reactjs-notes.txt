@@ -16,6 +16,31 @@ Why React -
 
 What is JSX -
     Javascript XML - it helps you write HTML in Javascript .
+    JSX converts Html tags into react elements
+        eg - const myElement = <h1>I Love JSX!</h1>
+        with JSX we can write expressions inside curly braces{} , expressions can be js variable, property , function call 
+            
+            eg- const myElement = <h1> Using jsx expresstion its a {10} </h1> 
+            eg- function Car() {
+                const mystyles = {
+                    color: "red",
+                    fontSize: "20px",
+                    backgroundColor: "lightyellow",
+                };
+
+                return (
+                    <>
+                    <h1 style={mystyles}>My car</h1>
+                    </>
+                );
+                }
+
+        -> The html code must be wrapped in One top level element , so put them in div or a fragment (<> </>)
+        -> user attribute classname instead of class in jsx 
+        -> Comments in jsx {/*  */}
+        
+        -> React support if statement but not inside jsx , we can write them outside jsx 
+        
 
 React render Html  -
     : React create html elements inside a defined container ( root container inside index.html file)
@@ -30,4 +55,6 @@ React render Html  -
         createRoot() : takes 1 arg that is the html element . In this container the html component will be displayed 
 
         render(): method defines what to display in the html container 
+
+
     
