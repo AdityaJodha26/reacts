@@ -56,5 +56,64 @@ React render Html  -
 
         render(): method defines what to display in the html container 
 
+React Components 
+    : components are independent and reusable piece of code . Work in isolatino and return HTML elements 
+        Two types - function component 
+                  - class component 
 
+    Function Components
+        : creating a react component we must start the name with Capital Letter , return HTML code 
+        eg- eg function Cars(props){
+                return(
+                    <h2> Rendering HTML <h2/>
+
+                )
+            }
+        -> Rendering a Component 
+            eg - createRoot(document.getElementById("root").render( <Cars />))
+
+            *React Props :
+                Arguments can be passedd into a components as props(properties) 
+                eg - createRoot(document.getElementById("root").render( <Cars  color="red "/>))
+                Props are passed to components via HTML attributes 
+                    eg- function Cars(props){
+                        return(
+                            <h2> Cars looking like {props.brand} <h2/>
+
+                        )}
+                        createRoot(document.getElementById("root")
+                        .render
+                        ( <Cars  brand= "bmw" />))
+                    
+                    Multiple Props-
+                        ( <Cars  brand= "bmw"  color="black"  model="m5"/>) 
+
+                * Destructing Props
+                    -to limit the properties inside the component.
+                    eg - function Car(props) {
+                         const {brand, model} = props; 
+                    }
+                     
+
+
+        -> Components in Component
+            eg - function Garage(){
+                <h1> About Garage <h1/>
+                <Cars /> 
+            }
+
+
+Reacts Hooks 
+    : Hooks allows functino to have access to state and other React features without using classes. They provide directs API to React Concepts like props , state etc .
+    - Hooks are functions that let you "hook into" React state and lifecycle features from functional components.  Must import the HOOK before use
+
+    # useState :
+    It allows us  to track state in a function component
+    State generally refers to data or Properties that need to be tracking in an application 
+        -> Initialize useState by calling the useState function inside the function components 
+        const [color , setcolor] = useState("red") 
+        here color - the current  state (red) ; 
+             setcolor - a function that updates the state ;
+
+        The useState Hook can be used to keep track of strings, numbers, booleans, arrays, objects, and any combination of these!
     

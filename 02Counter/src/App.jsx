@@ -1,19 +1,26 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
+
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
+  let [counter , setCounter] = useState(15) // it is Hook
+   
+ 
+
+  let add = ()=>{
+    setCounter(counter+1); 
+  }
+  let remove =()=>{
+    setCounter(counter-1)
+  }
   return (
     <>
-      <h1>Learing React </h1>
-      <h2>Counter value</h2>
-      <button>Add value</button>
-      <button>Remove value</button>
-      <p>footer</p> 
+      <h1>Learing React {counter} </h1>
+      <h2>Counter value {counter}</h2>
+      <button onClick={add}>Add value </button>
+      <button onClick={remove}>Remove value </button>
+      <p>footer{counter}</p> 
     </>
   )
 }
