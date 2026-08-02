@@ -6,4 +6,28 @@ How does React work -
 
 React need a buiding tool which is vite
     install this using - npm create vite@latest 
-    to run npm command you should be able to see package.json file in directory
+    to run npm command you should be able to see package.json file in directory.
+
+Why React -
+    React was developed to make changes in UI automatically 
+    It creates components which is used to reduce code 
+        Components are the blocks which together makes the whole web page (eg - heading , navbar , sidebar ,content)
+            : App component is the root component
+
+What is JSX -
+    Javascript XML - it helps you write HTML in Javascript .
+
+React render Html  -
+    : React create html elements inside a defined container ( root container inside index.html file)
+    - index.js 
+
+        createRoot(document.getElementById('root')).render(
+        <StrictMode>
+            <App />
+            </StrictMode>
+        )  
+
+        createRoot() : takes 1 arg that is the html element . In this container the html component will be displayed 
+
+        render(): method defines what to display in the html container 
+    
