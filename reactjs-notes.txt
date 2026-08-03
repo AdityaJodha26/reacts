@@ -1,6 +1,20 @@
 What is react - 
     React is js library which is used building userInterface components .
 
+    install tailwind - npm install tailwindcss @tailwindcss/vite
+    put this into vite.config 
+        import { defineConfig } from "vite";
+        import react from "@vitejs/plugin-react";
+        import tailwindcss from "@tailwindcss/vite";
+
+        export default defineConfig({
+        plugins: [
+            react(),
+            tailwindcss(),
+        ],
+        index.css - @import "tailwindcss";
+});
+
 How does React work - 
     React creates a virtual DOM in memory and does all manipulation there before the final changes in the browser dom
 
